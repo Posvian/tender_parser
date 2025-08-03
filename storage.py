@@ -5,6 +5,7 @@ from queries import CREATE_TABLE_TENDERS, INSERT_VALUES
 
 
 def save_to_csv(tenders: list[dict], filename: str):
+    """Сохраняет список тендеров в CSV файл."""
     if not tenders:
         return
 
@@ -16,6 +17,7 @@ def save_to_csv(tenders: list[dict], filename: str):
 
 
 def save_to_sqlite(tenders: list[dict], dbname: str = "tenders.db"):
+    """Сохраняет список тендеров в SQLite базу данных"""
     if not tenders:
         return
 

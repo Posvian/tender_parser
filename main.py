@@ -4,6 +4,9 @@ from storage import save_to_csv, save_to_sqlite
 
 
 def main():
+    """
+    Основная функция для парсинга и сохранения тендеров с сайта rostender.
+    """
     parser = argparse.ArgumentParser(description="Парсер тендеров с rostender")
     parser.add_argument(
         "--max", type=int, default=100, help="Необходимое количество тендеров"

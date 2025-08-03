@@ -10,6 +10,10 @@ BASE_URL = "https://rostender.info"
 
 
 def parse_tenders(max_count: int = 100) -> list[dict]:
+    """
+    Парсит список тендеров с сайта,
+    извлекая ключевую информацию о каждом тендере.
+    """
     tenders = []
     page = 1
     while len(tenders) < max_count:
